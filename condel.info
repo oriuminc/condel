@@ -1,0 +1,7 @@
+name = Continuous Delivery Base
+description = Base profile to facilitate continuous delivery.
+version = VERSION
+core = 7.x
+dependencies[] = block
+dependencies[] = dblog
+files[] = condel.profile
