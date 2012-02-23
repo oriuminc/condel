@@ -13,7 +13,7 @@ projects[cookie_cache_bypass_adv][subdir] = contrib
 projects[cookie_cache_bypass_adv][version] = 1.1
 
 projects[ctools][subdir] = contrib
-projects[ctools][version] = 2.0-beta5
+projects[ctools][version] = 1.0-rc1
 
 projects[devel][subdir] = contrib
 projects[devel][version] = 1.2
@@ -58,6 +58,9 @@ projects[google_website_optimizer][version] = 1.4
 
 projects[memcache][subdir] = contrib
 projects[memcache][version] = 1.0
+
+projects[performance][subdir] = contrib
+projects[performance][version] = 1.6
 
 projects[purge][subdir] = contrib
 ;projects[purge][version] = 1.x-dev
