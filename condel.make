@@ -6,9 +6,6 @@ api = 2
 
 ; MODULES
 
-projects[apc][subdir] = contrib
-projects[apc][version] = 1.0-beta3
-
 projects[backup_migrate][subdir] = contrib
 projects[backup_migrate][version] = 2.2
 
