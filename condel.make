@@ -4,6 +4,8 @@ api = 2
 ;projects[][subdir] = contrib
 ;projects[][version] = 
 
+; MODULES
+
 projects[apc][subdir] = contrib
 projects[apc][version] = 1.0-beta3
 
@@ -72,3 +74,8 @@ projects[strongarm][version] = 2.0-beta5
 
 projects[varnish][subdir] = contrib
 projects[varnish][version] = 1.0-beta1
+
+; LIBRARIES
+
+libraries[profiler][download][type] = get
+libraries[profiler][download][url] = http://ftp.drupal.org/files/projects/profiler-6.x-2.0-beta1.tar.gz
