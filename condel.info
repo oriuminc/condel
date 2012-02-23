@@ -5,3 +5,11 @@ core = 7.x
 dependencies[] = block
 dependencies[] = dblog
 files[] = condel.profile
+
+dependencies[] = menu
+dependencies[] = admin
+dependencies[] = diff
+dependencies[] = features
+dependencies[] = features_override2
+dependencies[] = strongarm
+dependencies[] = varnish

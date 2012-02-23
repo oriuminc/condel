@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the feature_perf_core_dev feature.
+ */
+
+include_once('feature_perf_core_dev.features.inc');

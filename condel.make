@@ -6,6 +6,9 @@ api = 2
 
 ; MODULES
 
+projects[admin][subdir] = contrib
+projects[admin][version] = 2.0-beta3
+
 projects[backup_migrate][subdir] = contrib
 projects[backup_migrate][version] = 2.2
 
@@ -17,6 +20,9 @@ projects[ctools][version] = 1.0-rc1
 
 projects[devel][subdir] = contrib
 projects[devel][version] = 1.2
+
+projects[diff][subdir] = contrib
+projects[diff][version] = 2.0
 
 projects[environment][subdir] = contrib
 ;projects[environment][version] = 1.x-dev
@@ -40,9 +46,9 @@ projects[features][patch][] = http://drupal.org/files/1317054_features_args_108_
 projects[features_override2][subdir] = contrib
 projects[features_override2][type] = module
 projects[features_override2][download][type] = git
-projects[features_override2][download][url] = http://git.drupal.org/sandbox/mpotter/1366652.git
+projects[features_override2][download][url] = https://github.com/hefox/features_overrides3.git
 ; Commit works with above patch only: http://drupal.org/node/1317054#comment-5641550
-projects[features_override2][download][revision] = 268499c8c6b313426f5289
+projects[features_override2][download][revision] = 55062daa68
 
 projects[features_plumber][subdir] = contrib
 projects[features_plumber][version] = 1.0-alpha3
@@ -77,5 +83,6 @@ projects[varnish][version] = 1.0-beta1
 
 ; LIBRARIES
 
+libraries[profiler][subdir] = contrib
 libraries[profiler][download][type] = get
 libraries[profiler][download][url] = http://ftp.drupal.org/files/projects/profiler-6.x-2.0-beta1.tar.gz
