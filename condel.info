@@ -12,4 +12,9 @@ dependencies[] = diff
 dependencies[] = features
 dependencies[] = features_override2
 dependencies[] = strongarm
+
+dependencies[] = apc
+dependencies[] = entitycache
+dependencies[] = memcache
 dependencies[] = varnish
+dependencies[] = elysia_cron
