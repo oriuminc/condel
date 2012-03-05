@@ -69,16 +69,20 @@ projects[fast_404][subdir] = contrib
 projects[fast_404][version] = 1.1
 
 projects[features][subdir] = contrib
-projects[features][version] = 1.0-beta6
-; Add feature alter hook: http://drupal.org/node/1317054#comment-5641550
-projects[features][patch][] = http://drupal.org/files/1317054_features_args_108_drushmake_1.0-beta6.patch
+; projects[features][version] = 1.0-beta6
+projects[features][type] = module
+projects[features][download][type] = git
+projects[features][download][url] = http://git.drupal.org/project/features.git
+projects[features][download][revision] = e1b0187b580a94b496876d
+; Add feature alter hook (#101): http://drupal.org/node/1317054#comment-5485054
+projects[features][patch][] = http://drupal.org/files/features-1317054-101.patch
 
 projects[features_override2][subdir] = contrib
 projects[features_override2][type] = module
 projects[features_override2][download][type] = git
-projects[features_override2][download][url] = https://github.com/hefox/features_overrides3.git
-; Commit works with above patch only: http://drupal.org/node/1317054#comment-5641550
-projects[features_override2][download][revision] = 55062daa68
+projects[features_override2][download][url] = http://git.drupal.org/sandbox/mpotter/1366652.git
+; This patch REQUIRES above patch to Features.
+projects[features_override2][download][revision] = a8c329c335547c35cd3c60
 
 projects[features_plumber][subdir] = contrib
 projects[features_plumber][version] = 1.0-alpha3

@@ -6,6 +6,7 @@ dependencies[] = block
 dependencies[] = dblog
 files[] = condel.profile
 
+; TO BE FEATURIZED
 dependencies[] = menu
 dependencies[] = admin
 dependencies[] = diff
@@ -18,3 +19,6 @@ dependencies[] = entitycache
 dependencies[] = memcache
 dependencies[] = varnish
 dependencies[] = elysia_cron
+
+; FEATURES
+dependencies[] = feature_perf_core_dev
