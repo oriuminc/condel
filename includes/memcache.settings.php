@@ -22,8 +22,8 @@ $conf['memcache_servers'] = array(
 
 // Array of Drupal cache bins to cache with Memcache
 $drupal_cache_bins_memcache = array(
-  'cache',
-  'cache_page',
+  'cache_field',
+  'cache_menu',
 );
 
 foreach ($drupal_cache_bins_memcache as $cache_bin) {
