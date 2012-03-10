@@ -10,6 +10,26 @@
  * @See http://drupalcode.org/project/memcache.git/blob/7.x-1.0:/INSTALLATION.txt#l90
  * @See INSTALLATION.txt outdated and redundant: http://drupal.org/node/1452966
  */
-include_once('./includes/cache.inc');
 $conf['cache_backends'][] = 'profiles/condel/modules/contrib/memcache/memcache.inc';
-$conf['cache_default_class'] = 'MemCacheDrupal';
+
+// Set default cache type for Drupal cache bins to be native database caching.
+$conf['cache_default_class'] = 'DrupalDatabaseCache';
+
+// Assign Memcache instance to a cluster named 'default'
+$conf['memcache_servers'] = array(
+  '127.0.0.1:11211' => 'default',
+);
+
+// Array of Drupal cache bins to cache with Memcache
+$drupal_cache_bins_memcache = array(
+  'cache',
+  'cache_page',
+);
+
+foreach ($drupal_cache_bins_memcache as $cache_bin) {
+  // Assign each Drupal cache bin to Memcache caching (Memcache bin has same name)
+  $conf['cache_class_' . $cache_bin] = 'MemCacheDrupal';
+
+  // Assign Memcache bin to cluster 'default'
+  $conf['memcache_bins'][$cache_bin] = 'default';
+}
