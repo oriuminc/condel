@@ -141,8 +141,6 @@ projects[styleguide][version] = 1.0
 
 projects[stringoverrides][subdir] = contrib
 projects[stringoverrides][version] = 1.8
-; Adds features integration: http://drupal.org/node/1185284#comment-5630580
-projects[stringoverrides][patch][] = http://drupal.org/files/stringoverrides.features.inc_.txt
 
 projects[subpathauto][subdir] = contrib
 projects[subpathauto][version] = 1.2
