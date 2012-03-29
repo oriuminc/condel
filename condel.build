@@ -2,9 +2,8 @@ core = 7.x
 api = 2
 
 projects[pressflow][type] = core
-projects[pressflow][download][type] = git
-projects[pressflow][download][url] = https://github.com/pressflow/7.git
-projects[pressflow][download][revision] = 86e637864707e
+projects[pressflow][download][type] = file
+projects[pressflow][download][url] = https://github.com/pressflow/7/tarball/7.12
 
 projects[condel][type] = profile
 projects[condel][download][type] = git
