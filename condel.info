@@ -12,6 +12,9 @@ dependencies[] = admin
 dependencies[] = diff
 dependencies[] = features
 dependencies[] = features_override
+dependencies[] = environment
+dependencies[] = myplanet_environment
+dependencies[] = module_builder
 dependencies[] = strongarm
 
 dependencies[] = apc

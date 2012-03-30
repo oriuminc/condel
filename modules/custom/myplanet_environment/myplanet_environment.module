@@ -1,0 +1,74 @@
+<?php
+
+/**
+ * @file
+ * Environment module base settings (API functions and hooks)
+ */
+
+/**
+ * Implementation of hook_environment_alter().
+ */
+function myplanet_environment_environment_alter(&$environments) {
+  $environments['production'] = array(
+    'name' => 'production',
+    'workflow' => 'default',
+    'label' => t('Production'),
+    'description' => t('Production sites are for live content and should rarely be altered directly.'),
+    'allowed' => array(),
+  );
+  $environments['development'] = array(
+    'name' => 'development',
+    'workflow' => 'default',
+    'label' => t('Development'),
+    'description' => t("Development sites should be on a developer's local machine, for individual testing and feature development."),
+    'allowed' => array(),
+  );
+}
+
+/**
+ * Implementation of hook_environment().
+ */
+function myplanet_environment_environment() {
+  $environments = array();
+  $environments['integration'] = array(
+    'name' => 'integration',
+    'workflow' => 'default',
+    'label' => t('Integration'),
+    'description' => t('Integration sites are for testing combined efforts and commits of a single team.'),
+    'allowed' => array(),
+  );
+  $environments['staging'] = array( 
+    'name' => 'staging',
+    'workflow' => 'default',
+    'label' => t('Staging'),
+    'description' => t('Staging sites are for content creation and client review. Server configuration should essentially be identical to production.'),
+    'allowed' => array(),
+  );
+  return $environments;
+}
+
+/**
+ * Implementation of hook_environment_switch().
+ */
+function myplanet_environment_environment_switch($target_env, $current_env) {
+  $dev_modules = array(
+    'dblog',
+    'devel',
+    'environment_indicator',
+    'update',
+    'strongarm',
+  );
+
+  $prod_modules = array(
+    // http://drupal.org/documentation/modules/syslog
+    'syslog',
+  );
+
+  if ($target_env == 'production') {
+    module_disable($dev_modules);
+    drush_print('- Disabled development modules');
+  } else {
+  	module_enable($dev_modules);
+  	drush_print('- Enabled development modules');
+  }
+}

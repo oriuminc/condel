@@ -1,0 +1,4 @@
+name = Environment (Myplanet)
+description = "Custom settings for the Environment module."
+core = 7.x
+dependencies[] = environment

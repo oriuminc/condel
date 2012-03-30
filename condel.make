@@ -104,6 +104,13 @@ projects[md5check][version] = 1.0
 projects[memcache][subdir] = contrib
 projects[memcache][version] = 1.0
 
+projects[module_builder][subdir] = contrib
+;projects[module_builder][version] = 2.x-dev
+projects[module_builder][type] = module
+projects[module_builder][download][type] = git
+projects[module_builder][download][url] = http://git.drupal.org/project/module_builder.git
+projects[module_builder][download][revision] = 406e922775966f1668
+
 projects[pathauto][subdir] = contrib
 projects[pathauto][version] = 1.0
 
