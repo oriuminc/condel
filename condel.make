@@ -31,7 +31,7 @@ projects[css_emimage][subdir] = contrib
 projects[css_emimage][version] = 1.2
 
 projects[ctools][subdir] = contrib
-projects[ctools][version] = 1.0-rc1
+projects[ctools][version] = 1.0
 
 projects[devel][subdir] = contrib
 projects[devel][version] = 1.2
@@ -43,7 +43,7 @@ projects[drupalforfirebug][subdir] = contrib
 projects[drupalforfirebug][version] = 1.2
 
 projects[elysia_cron][subdir] = contrib
-projects[elysia_cron][version] = 2.0
+projects[elysia_cron][version] = 2.1
 
 projects[entity][subdir] = contrib
 projects[entity][version] = 1.0-rc1
@@ -69,20 +69,10 @@ projects[fast_404][subdir] = contrib
 projects[fast_404][version] = 1.1
 
 projects[features][subdir] = contrib
-; projects[features][version] = 1.0-beta6
-projects[features][type] = module
-projects[features][download][type] = git
-projects[features][download][url] = http://git.drupal.org/project/features.git
-projects[features][download][revision] = e1b0187b580a94b496876d
-; Add feature alter hook (#101): http://drupal.org/node/1317054#comment-5485054
-projects[features][patch][] = http://drupal.org/files/features-1317054-101.patch
+projects[features][version] = 1.0-rc1
 
-projects[features_override2][subdir] = contrib
-projects[features_override2][type] = module
-projects[features_override2][download][type] = git
-projects[features_override2][download][url] = http://git.drupal.org/sandbox/mpotter/1366652.git
-; This patch REQUIRES above patch to Features.
-projects[features_override2][download][revision] = a8c329c335547c35cd3c60
+projects[features_override][subdir] = contrib
+projects[features_override][version] = 2.0-alpha1
 
 projects[features_plumber][subdir] = contrib
 projects[features_plumber][version] = 1.0-alpha3
@@ -134,7 +124,7 @@ projects[security_review][subdir] = contrib
 projects[security_review][version] = 1.0
 
 projects[strongarm][subdir] = contrib
-projects[strongarm][version] = 2.0-beta5
+projects[strongarm][version] = 2.0-rc1
 
 projects[styleguide][subdir] = contrib
 projects[styleguide][version] = 1.0

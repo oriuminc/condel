@@ -11,7 +11,7 @@ dependencies[] = menu
 dependencies[] = admin
 dependencies[] = diff
 dependencies[] = features
-dependencies[] = features_override2
+dependencies[] = features_override
 dependencies[] = strongarm
 
 dependencies[] = apc
