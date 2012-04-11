@@ -4,6 +4,8 @@ api = 2
 projects[pressflow][type] = core
 projects[pressflow][download][type] = file
 projects[pressflow][download][url] = https://github.com/pressflow/7/tarball/7.12
+# Allow profile inheritence: http://drupal.org/node/1356276#comment-5309148
+projects[pressflow][patch][] = http://drupal.org/files/1356276-make-D7.patch
 
 projects[condel][type] = profile
 projects[condel][download][type] = git
